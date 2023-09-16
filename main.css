@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  padding: 0 20px;
+}
+.dark {
+  background-color: #222;
+  color: #fff;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: 0.3s;
+  max-width: 840px;
+}
+.app.dark {
+  background-color: #111;
+}
+.app .toggoler {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 24px;
+  color: #111;
+}
+.app .toggoler:hover {
+  background-color: #222;
+  color: #fff;
+}
+.app h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.app input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.app .inputs .prices {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .app .inputs .prices {
+    flex-wrap: wrap;
+  }
+}
+.app .inputs .prices input {
+  width: 20%;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .app .inputs .prices input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+.app .inputs .prices > small {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.app .inputs .prices > small::before {
+  content: "Total: ";
+  font-weight: normal;
+  font-size: 16px;
+}
+.app button {
+  width: 100%;
+  padding: 15px 10px;
+  background-color: #0075ff;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.app button:hover {
+  background-color: #03a9f4;
+}
+.app button.submit {
+  margin-bottom: 10px;
+}
+.app .search-by {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.app .search-by button {
+  width: 45%;
+}
+.app table {
+  margin-top: 20px;
+  text-align: center;
+}
+.app table th {
+  text-transform: uppercase;
+}
+.app table button {
+  padding: 6px 4px;
+  font-size: 16px;
+}
+.app table th,
+.app table td {
+  padding: 8px;
+}
